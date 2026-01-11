@@ -43,8 +43,8 @@ body {
 }
 
 .logo {
-  width: 170px;
-  margin-bottom: 20px;
+  width: 200px;
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -70,4 +70,5 @@ button {
 button:hover {
   background: #ff1f2d;
 }
+
 
