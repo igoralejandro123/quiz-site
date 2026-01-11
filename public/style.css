@@ -362,3 +362,43 @@ button:hover {
   margin-top:6px;
 }
 
+.apply-section{
+  margin-top:30px;
+  text-align:center;
+}
+
+.apply-title{
+  color:#ffd000;
+  font-weight:bold;
+  margin-bottom:15px;
+  text-decoration:underline;
+}
+
+.apply-card{
+  background:#0e0e0e;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 0 15px rgba(0,0,0,0.6);
+}
+
+.apply-image{
+  width:100%;
+  display:block;
+}
+
+.apply-text-box{
+  padding:12px;
+}
+
+.apply-text-box h3{
+  color:#ffd000;
+  margin-bottom:6px;
+  font-size:16px;
+}
+
+.apply-text-box p{
+  color:#ffffff;
+  font-size:13px;
+  line-height:1.4;
+}
+
