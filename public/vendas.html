@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>23 Secret Techniques</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sales-container">
+
+  <section class="hero">
+
+    <h1>
+      Discover the <span>23 Secret Techniques</span> to make any woman reach an
+      <span class="red">intense orgasm (squirt)</span> in less than 4 minutes
+    </h1>
+
+    <p class="hero-sub">
+      Watch below a preview of one of the lessons ⬇️
+    </p>
+
+    <div class="sales-video-box" onclick="toggleSalesVideo()">
+      <video id="salesVideo" src="demo.mp4" playsinline muted></video>
+      <div class="sales-play-overlay" id="salesPlay">
+        <span>▶</span>
+      </div>
+    </div>
+
+    <p class="hero-bottom-text">
+      Enough of mediocre sex! Learn how to truly give intense and pleasurable orgasms to your woman.
+    </p>
+
+  </section>
+
+</div>
+
+<script>
+const salesVideo = document.getElementById("salesVideo");
+const salesPlay = document.getElementById("salesPlay");
+let started = false;
+
+window.addEventListener("load", () => {
+  salesVideo.muted = true;
+  salesVideo.play();
+});
+
+function toggleSalesVideo(){
+  if(!started){
+    started = true;
+    salesVideo.pause();
+    salesVideo.currentTime = 0;
+    salesVideo.muted = false;
+    salesVideo.play();
+    salesPlay.style.display = "none";
+    return;
+  }
+
+  if(salesVideo.paused){
+    salesVideo.play();
+    salesPlay.style.display = "none";
+  } else {
+    salesVideo.pause();
+    salesPlay.style.display = "flex";
+  }
+}
+</script>
+
+</body>
+</html>
