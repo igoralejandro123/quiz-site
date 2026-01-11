@@ -184,12 +184,13 @@ button:hover {
 
 .info-box{
   background:#ffeaea;
-  color:#b30000;
-  padding:14px;
+  color:#8b0000;          /* texto mais escuro */
+  padding:16px;
   border-radius:12px;
-  font-size:13px;
-  line-height:1.5;
+  font-size:14px;
+  line-height:1.6;
   margin:15px 0;
+  font-weight:500;
 }
 
 .confirm-btn{
@@ -207,6 +208,7 @@ button:hover {
 .confirm-btn:hover{
   background:#e50914;
 }
+
 
 
 
