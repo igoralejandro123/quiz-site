@@ -251,6 +251,38 @@ button:hover {
   font-size:18px;
 }
 
+.video-box{
+  position:relative;
+  width:100%;
+  border-radius:16px;
+  overflow:hidden;
+  margin:15px 0;
+  background:black;
+}
+
+.video-box video{
+  width:100%;
+  display:block;
+}
+
+.play-overlay{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:70px;
+  height:70px;
+  background:#e50914;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:32px;
+  cursor:pointer;
+  box-shadow:0 0 20px rgba(229,9,20,0.7);
+}
+
 
 
 
