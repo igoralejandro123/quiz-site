@@ -277,11 +277,17 @@ button:hover {
   display:flex;
   align-items:center;
   justify-content:center;
+  box-shadow:0 0 20px rgba(229,9,20,0.7);
+  cursor:pointer;
+}
+
+.play-overlay span{
   color:white;
   font-size:32px;
-  cursor:pointer;
-  box-shadow:0 0 20px rgba(229,9,20,0.7);
+  margin-left:4px; /* pequeno ajuste visual */
 }
+
+
 
 
 
