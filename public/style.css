@@ -287,6 +287,97 @@ button:hover {
   margin-left:4px; /* pequeno ajuste visual */
 }
 
+.pricing-section{
+  padding:40px 15px;
+  text-align:center;
+}
+
+.pricing-alert{
+  color:#baff00;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.plans{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.plan-card{
+  background:#0d0d0d;
+  border:2px solid #222;
+  border-radius:14px;
+  padding:20px 15px;
+  color:white;
+  position:relative;
+}
+
+.plan-card h3{
+  margin:5px 0;
+}
+
+.plan-sub{
+  color:#aaa;
+  font-size:14px;
+  margin-bottom:10px;
+}
+
+.plan-card ul{
+  list-style:none;
+  padding:0;
+  margin:15px 0;
+  text-align:left;
+  font-size:14px;
+}
+
+.plan-card ul li{
+  margin-bottom:6px;
+}
+
+.price{
+  font-size:26px;
+  color:#00ff7f;
+  margin:15px 0;
+  font-weight:bold;
+}
+
+.premium-price{
+  color:#00ff00;
+}
+
+.btn-basic, .btn-premium{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:10px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.btn-basic{
+  background:#444;
+  color:white;
+}
+
+.btn-premium{
+  background:#00c853;
+  color:black;
+  font-weight:bold;
+}
+
+.badge{
+  position:absolute;
+  top:-10px;
+  right:10px;
+  background:#ffd000;
+  color:black;
+  padding:4px 8px;
+  font-size:12px;
+  border-radius:6px;
+  font-weight:bold;
+}
+
 
 
 
