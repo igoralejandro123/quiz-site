@@ -428,6 +428,42 @@ button:hover {
   text-align:center;
 }
 
+/* ===== FIX LAYOUT DESKTOP ===== */
+.sales {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+/* Centraliza tudo */
+.sales section {
+  width: 100%;
+}
+
+/* Corrige vídeos */
+.sales .video-box {
+  max-width: 100%;
+}
+
+/* Corrige cards */
+.plan-card,
+.benefit-card,
+.bonus-card {
+  width: 100%;
+}
+
+/* Desktop ajustes */
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sales {
+    max-width: 420px;
+  }
+}
+
 
 
 
