@@ -163,6 +163,25 @@ button:hover {
   display:block;
 }
 
+.quiz-gif{
+  width:100%;
+  max-width:320px;
+  border-radius:14px;
+  margin:15px auto 20px;
+  display:block;
+}
+
+.answers-row{
+  display:flex;
+  gap:10px;
+}
+
+.answers-row .answer-btn{
+  flex:1;
+  font-size:13px;
+  padding:12px;
+}
+
 
 
 
