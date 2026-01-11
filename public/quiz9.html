@@ -20,9 +20,16 @@
       And this is just 1 of the 23 techniques we will teach you... 😉
     </p>
 
-    <div class="video-box">
-      <video src="demo.mp4" controls playsinline></video>
+   <div class="video-box" onclick="playVideo()">
+
+      <video id="demoVideo" src="demo.mp4" playsinline></video>
+
+      <div class="play-overlay" id="playOverlay">
+      ▶
+      </div>
+
     </div>
+
 
     <h3 class="quiz-question-red">What did you think?</h3>
 
