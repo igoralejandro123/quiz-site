@@ -50,5 +50,26 @@ function next(){
 }
 </script>
 
+<script>
+function playVideo(){
+  const video = document.getElementById("demoVideo");
+  const overlay = document.getElementById("playOverlay");
+
+  video.play();
+  overlay.style.display = "none";
+
+  // bloqueia controles
+  video.controls = false;
+
+  // impede voltar o vídeo
+  video.addEventListener("seeking", function(){
+    if(video.currentTime < video.played.end(0)){
+      video.currentTime = video.played.end(0);
+    }
+  });
+}
+</script>
+  
+  
 </body>
 </html>
