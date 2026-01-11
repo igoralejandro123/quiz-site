@@ -287,3 +287,78 @@ button:hover {
   margin-left:4px; /* pequeno ajuste visual */
 }
 
+
+/* pagina vendas */
+
+.sales-container{
+  max-width:420px;
+  margin:0 auto;
+  padding:12px;
+}
+
+.hero{
+  text-align:center;
+}
+
+.hero h1{
+  font-size:20px;
+  line-height:1.4;
+  margin-bottom:10px;
+}
+
+.hero h1 span{
+  color:#ffd000;
+}
+
+.hero .red{
+  color:#e50914;
+}
+
+.hero-sub{
+  color:#e50914;
+  font-size:13px;
+  margin-bottom:12px;
+}
+
+.sales-video-box{
+  position:relative;
+  width:100%;
+  border-radius:16px;
+  overflow:hidden;
+  margin-bottom:12px;
+  background:black;
+}
+
+.sales-video-box video{
+  width:100%;
+  display:block;
+}
+
+.sales-play-overlay{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:70px;
+  height:70px;
+  background:#e50914;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 0 20px rgba(229,9,20,0.7);
+  cursor:pointer;
+}
+
+.sales-play-overlay span{
+  color:white;
+  font-size:32px;
+  margin-left:4px;
+}
+
+.hero-bottom-text{
+  color:white;
+  font-size:14px;
+  margin-top:6px;
+}
+
