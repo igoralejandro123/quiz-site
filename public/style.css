@@ -232,6 +232,25 @@ button:hover {
   display:block;
 }
 
+.video-box{
+  width:100%;
+  border-radius:16px;
+  overflow:hidden;
+  margin:15px 0;
+}
+
+.video-box video{
+  width:100%;
+  display:block;
+  border-radius:16px;
+}
+
+.quiz-question-red{
+  color:#e50914;
+  margin:15px 0 10px;
+  font-size:18px;
+}
+
 
 
 
