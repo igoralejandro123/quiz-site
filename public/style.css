@@ -183,15 +183,20 @@ button:hover {
 }
 
 .info-box{
-  background:#ffeaea;
-  color:#8b0000;          /* texto mais escuro */
+  background:#ffe6e6;
   padding:16px;
   border-radius:12px;
   font-size:14px;
   line-height:1.6;
   margin:15px 0;
-  font-weight:500;
 }
+
+.info-box p{
+  color:#c00000;       /* vermelho forte igual original */
+  font-weight:600;
+  opacity:1;           /* força visibilidade total */
+}
+
 
 .confirm-btn{
   width:100%;
@@ -208,6 +213,7 @@ button:hover {
 .confirm-btn:hover{
   background:#e50914;
 }
+
 
 
 
