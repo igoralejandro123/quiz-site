@@ -182,6 +182,32 @@ button:hover {
   padding:12px;
 }
 
+.info-box{
+  background:#ffeaea;
+  color:#b30000;
+  padding:14px;
+  border-radius:12px;
+  font-size:13px;
+  line-height:1.5;
+  margin:15px 0;
+}
+
+.confirm-btn{
+  width:100%;
+  margin-top:15px;
+  padding:14px;
+  background:#b60d0d;
+  border:none;
+  color:white;
+  font-size:15px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.confirm-btn:hover{
+  background:#e50914;
+}
+
 
 
 
