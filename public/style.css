@@ -117,6 +117,45 @@ button:hover {
   color:#fff;
 }
 
+.quiz-small-title{
+  color:#e50914;
+  margin-top:15px;
+  font-size:18px;
+}
+
+.quiz-title-white{
+  color:#fff;
+  font-size:20px;
+  margin:10px 0 20px;
+}
+
+.answers-column{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-bottom:20px;
+}
+
+.answer-btn{
+  background:#b60d0d;
+  border:none;
+  color:white;
+  padding:14px;
+  font-size:15px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.answer-btn:hover{
+  background:#e50914;
+}
+
+.quiz-image{
+  width:90%;
+  max-width:320px;
+  margin-top:10px;
+}
+
 
 
 
