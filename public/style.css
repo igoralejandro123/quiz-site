@@ -214,6 +214,24 @@ button:hover {
   background:#e50914;
 }
 
+.quiz-sub-red{
+  color:#e50914;
+  font-size:13px;
+  margin-bottom:15px;
+}
+
+.big-btn{
+  font-size:16px;
+  padding:14px;
+}
+
+.quiz-image-bottom{
+  width:90%;
+  max-width:320px;
+  margin-top:20px;
+  display:block;
+}
+
 
 
 
