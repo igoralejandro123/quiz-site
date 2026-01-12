@@ -402,3 +402,35 @@ button:hover {
   line-height:1.4;
 }
 
+.pain-section{
+  margin-top:40px;
+  text-align:center;
+}
+
+.pain-section h2{
+  font-size:18px;
+  margin-bottom:20px;
+}
+
+.pain-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.pain-item{
+  background:#111;
+  border-left:4px solid #e50914;
+  padding:12px;
+  border-radius:8px;
+  font-size:14px;
+  text-align:left;
+}
+
+.pain-conclusion{
+  margin-top:18px;
+  font-size:14px;
+  color:#ffd000;
+  font-weight:bold;
+}
+
