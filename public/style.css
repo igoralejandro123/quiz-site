@@ -594,3 +594,48 @@ button:hover {
   font-weight:bold;
 }
 
+.guarantee-section{
+  margin-top:40px;
+  padding:0 5px;
+}
+
+.guarantee-box{
+  background:linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  border-radius:16px;
+  padding:20px 16px;
+  text-align:center;
+  position:relative;
+  box-shadow:0 0 20px rgba(0,0,0,0.6);
+}
+
+.guarantee-badge{
+  position:absolute;
+  top:-12px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#00ff9c;
+  color:#000;
+  font-size:12px;
+  font-weight:bold;
+  padding:5px 10px;
+  border-radius:20px;
+}
+
+.guarantee-box h2{
+  font-size:18px;
+  margin-top:12px;
+  margin-bottom:10px;
+}
+
+.guarantee-box p{
+  font-size:14px;
+  color:#e5e5e5;
+  line-height:1.5;
+}
+
+.guarantee-strong{
+  margin-top:10px;
+  color:#ffffff;
+  font-weight:bold;
+}
+
