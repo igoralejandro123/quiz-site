@@ -434,3 +434,31 @@ button:hover {
   font-weight:bold;
 }
 
+.social-proof{
+  margin-top:40px;
+  text-align:center;
+}
+
+.social-proof h2{
+  font-size:18px;
+  margin-bottom:16px;
+}
+
+.proof-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:12px;
+}
+
+.proof-img{
+  width:100%;
+  border-radius:12px;
+  box-shadow:0 0 12px rgba(0,0,0,0.6);
+}
+
+.proof-note{
+  margin-top:12px;
+  font-size:13px;
+  color:#ccc;
+}
+
