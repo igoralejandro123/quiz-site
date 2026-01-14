@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>23 Orgastic Techniques</title>
+
+<style>
+body{
+  margin:0;
+  background:#0b0b0f;
+  color:#fff;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:20px;
+}
+h1{
+  text-align:center;
+  margin-bottom:30px;
+}
+.lesson{
+  background:#141420;
+  border-radius:14px;
+  padding:16px;
+  margin-bottom:25px;
+}
+.lesson h3{
+  margin:0 0 10px 0;
+}
+.video{
+  max-width:900px;
+  margin:auto;
+}
+button{
+  margin-top:12px;
+  padding:10px 16px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  background:#6cf2c2;
+  color:#000;
+  font-weight:bold;
+}
+button.done{
+  background:#2a2a3a;
+  color:#aaa;
+  cursor:default;
+}
+.top-actions{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+a{
+  color:#6cf2c2;
+  text-decoration:none;
+}
+.progress-text{
+  color:#9aa0a6;
+  font-size:14px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="top-actions">
+  <a href="dashboard.html">← Back to dashboard</a>
+  <div class="progress-text" id="progressText"></div>
+</div>
+
+<h1>23 Orgastic Techniques</h1>
+
+<!-- ===== TEMPLATE DE AULA =====
+<div class="lesson" data-lesson="1">
+  <h3>Lesson 1 – Title</h3>
+  <div class="video">
+    COLE AQUI O IFRAME DO BUNNY
+  </div>
+  <button onclick="markDone(1)">Mark as completed</button>
+</div>
+================================ -->
+
+<!-- AULA 1 -->
+<div class="lesson" data-lesson="1">
+  <h3>Lesson 1 – Warming things up</h3>
+  <div class="video">
+    <div style="position:relative;padding-top:56.25%;"><iframe src="https://iframe.mediadelivery.net/embed/580150/987f5123-a436-4a49-af1f-676aa8575395?autoplay=false&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
+  </div>
+  <button onclick="markDone(1)">Mark as completed</button>
+</div>
+
+<!-- AULA 2 -->
+<div class="lesson" data-lesson="2">
+  <h3>Lesson 2</h3>
+  <div class="video"><!-- iframe --></div>
+  <button onclick="markDone(2)">Mark as completed</button>
+</div>
+
+<!-- AULA 3 -->
+<div class="lesson" data-lesson="3">
+  <h3>Lesson 3</h3>
+  <div class="video"><!-- iframe --></div>
+  <button onclick="markDone(3)">Mark as completed</button>
+</div>
+
+<!-- ... -->
+
+<!-- AULA 24 -->
+<div class="lesson" data-lesson="24">
+  <h3>Lesson 24</h3>
+  <div class="video"><!-- iframe --></div>
+  <button onclick="markDone(24)">Mark as completed</button>
+</div>
+
+</div>
+
+<script>
+const TOTAL_LESSONS = 24;
+
+function getDone(){
+  return parseInt(localStorage.getItem('mod1_done') || '0');
+}
+
+function setDone(n){
+  localStorage.setItem('mod1_done', n);
+}
+
+function markDone(n){
+  let done = getDone();
+  if(n > done){
+    setDone(n);
+  }
+  updateUI();
+}
+
+function updateUI(){
+  let done = getDone();
+
+  document.getElementById('progressText').innerText =
+    `Progress: ${done} / ${TOTAL_LESSONS} lessons`;
+
+  document.querySelectorAll('.lesson').forEach(lesson=>{
+    const n = parseInt(lesson.dataset.lesson);
+    const btn = lesson.querySelector('button');
+
+    if(n <= done){
+      btn.innerText = 'Completed ✓';
+      btn.classList.add('done');
+      btn.disabled = true;
+    }
+  });
+}
+
+updateUI();
+</script>
+
+</body>
+</html>
