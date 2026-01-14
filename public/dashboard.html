@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Área do Aluno</title>
+
+<style>
+:root{
+  --bg:#0b0b0f;
+  --card:#141420;
+  --text:#ffffff;
+  --muted:#9aa0a6;
+  --accent:#6cf2c2;
+  --bar:#2a2a3a;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.header{
+  padding:24px;
+  text-align:center;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+}
+
+.module-card{
+  background:var(--card);
+  border-radius:16px;
+  overflow:hidden;
+  cursor:pointer;
+  transition:transform .2s, box-shadow .2s;
+}
+
+.module-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.module-img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  display:block;
+}
+
+.module-body{
+  padding:16px;
+}
+
+.module-title{
+  font-size:18px;
+  margin:0 0 6px 0;
+}
+
+.module-sub{
+  color:var(--muted);
+  font-size:14px;
+  margin-bottom:12px;
+}
+
+.progress-wrap{
+  background:var(--bar);
+  border-radius:10px;
+  overflow:hidden;
+  height:10px;
+}
+
+.progress-fill{
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg,#4facfe,#6cf2c2);
+  transition:width .3s;
+}
+
+.footer{
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
+  padding:20px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">🎓 Área do Aluno</div>
+
+<div class="container">
+
+  <!-- MÓDULO 1 -->
+  <div class="module-card" onclick="openModule('modulo1.html')">
+    <img src="assets/modulo1.jpg" class="module-img" alt="Módulo principal">
+    <div class="module-body">
+      <h3 class="module-title">23 Orgastic Techniques</h3>
+      <div class="module-sub">24 aulas</div>
+
+      <div class="progress-wrap">
+        <div class="progress-fill" id="progress-mod1"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÓDULO 2 -->
+  <div class="module-card" onclick="openModule('modulo2.html')">
+    <img src="assets/modulo2.jpg" class="module-img" alt="Módulo 2">
+    <div class="module-body">
+      <h3 class="module-title">Techniques to make her squirt</h3>
+      <div class="module-sub">2 aulas</div>
+
+      <div class="progress-wrap">
+        <div class="progress-fill" id="progress-mod2"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">© Área exclusiva para alunos</div>
+
+<script>
+function openModule(url){
+  window.location.href = url;
+}
+
+/* ===== SISTEMA DE PROGRESSO (localStorage) =====
+   Cada módulo salva um número de aulas assistidas.
+   Ex:
+   localStorage.setItem('mod1_done', 5);
+*/
+
+function updateProgress(){
+  const mod1Done = parseInt(localStorage.getItem('mod1_done') || '0');
+  const mod2Done = parseInt(localStorage.getItem('mod2_done') || '0');
+
+  const mod1Total = 24;
+  const mod2Total = 2;
+
+  const p1 = Math.min(100, (mod1Done / mod1Total) * 100);
+  const p2 = Math.min(100, (mod2Done / mod2Total) * 100);
+
+  document.getElementById('progress-mod1').style.width = p1 + '%';
+  document.getElementById('progress-mod2').style.width = p2 + '%';
+}
+
+updateProgress();
+</script>
+
+</body>
+</html>
 
