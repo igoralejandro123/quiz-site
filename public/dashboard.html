@@ -128,6 +128,20 @@ body{
   </div>
 </div>
 
+<!-- BONUS MODULE -->
+<div class="module-card" onclick="openModule('modulo_bonus.html')">
+  <img src="assets3.png" class="module-img" alt="Bonus module">
+  <div class="module-body">
+    <h3 class="module-title">Bonus Module</h3>
+    <div class="module-sub">2 lessons</div>
+
+    <div class="progress-wrap">
+      <div class="progress-fill" id="progress-mod3"></div>
+    </div>
+  </div>
+</div>
+
+
 
 </div>
 
@@ -147,15 +161,19 @@ function openModule(url){
 function updateProgress(){
   const mod1Done = parseInt(localStorage.getItem('mod1_done') || '0');
   const mod2Done = parseInt(localStorage.getItem('mod2_done') || '0');
+  const mod3Done = parseInt(localStorage.getItem('mod3_done') || '0');
 
   const mod1Total = 24;
   const mod2Total = 2;
+  const mod3Total = 2;
 
   const p1 = Math.min(100, (mod1Done / mod1Total) * 100);
   const p2 = Math.min(100, (mod2Done / mod2Total) * 100);
+  const p3 = Math.min(100, (mod3Done / mod3Total) * 100);
 
   document.getElementById('progress-mod1').style.width = p1 + '%';
   document.getElementById('progress-mod2').style.width = p2 + '%';
+  document.getElementById('progress-mod3').style.width = p3 + '%';
 }
 
 updateProgress();
